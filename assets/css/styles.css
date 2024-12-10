@@ -2,14 +2,22 @@
 
 :root {
     --default-font: 'Poppins';
+    --font-size: x-large;
 }
 
+@media screen and (max-width: 480px) {
+    :root {
+        --font-size: large;
+    }
+}
 
-body{
+body {
     font-family: var(--default-font);
     height: 100vh;
     margin: 0;
+    box-sizing: border-box;
 }
+
 .flex-center {
     font-weight: 300;
     display: flex;
@@ -17,6 +25,6 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    font-size: x-large;
+    text-align: center;
+    font-size: var(--font-size);
 }
