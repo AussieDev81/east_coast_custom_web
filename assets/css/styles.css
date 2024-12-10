@@ -17,5 +17,6 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
+    text-align: centre;
     font-size: x-large;
 }
